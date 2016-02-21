@@ -9,6 +9,17 @@ function isNumber(arg)
 
 function add() 
 {
+  function isNumber(arg)
+{
+  if (typeof arg === 'number')
+  {
+    return true;
+  }
+  else return false;
+}
+
+function add() 
+{
   if (arguments.length === 2)
   { 
     if (isNumber(arguments[0]) && isNumber(arguments[1]))
@@ -36,3 +47,12 @@ function add()
 }
 
 add(2,3);
+
+var sumTwoAnd = add(2);
+console.log(sumTwoAnd(7));
+console.log(add(2,3));
+console.log(add(15,4));
+var a = add("http://bit.ly/IqT6zt");
+console.log(a);
+console.log(add(2, "3"));
+console.log(add(2)([3]));
